@@ -11,17 +11,28 @@
     <title>Document</title>
 </head>
 <body id="body">
-    <div class="row">
-        <div class="col-3 "></div>
+    <div class="row margin-left: 30px;">
         <div class="col-4">
             <form action="" method="get">
-            <h2 style="margin-top: 30px; color: rgb(86, 70, 110);"> Weather Forecast </h2>
-            <h5 style="margin-top: 100px; color: rgb(86, 70, 110);"> Enter City Name: </h5>
-           <input type="text" id="city">
-            <button id="submit" type="submit">Search</button>
+            <h2 style="margin-top: 30px; margin-left: 30px; color: rgb(86, 70, 110);"> Weather Forecast </h2>
+            <h5 style="margin-top: 100px; margin-left: 30px; color: rgb(86, 70, 110);"> Enter City Name: </h5>
+           <input type="text" style="margin-left: 30px;" id="city">
+            <button id="submit" style="margin-left: 30px;" type="submit">Search</button>
+
+            <div class="card" style="width: 18rem; margin-top: 20px; margin-left: 30px;">
+                <ul class="list-group list-group-flush">
+                    <li id="forecastTimeUtc" class="list-group-item"></li>
+                    <li id="airTemperature" class="list-group-item"></li>
+                    <li id="feelsLikeTemperature" class="list-group-item"></li>
+                    <li id="windSpeed" class="list-group-item"></li>
+                    <li id="seaLevelPressure" class="list-group-item"></li>
+                    <li id="relativeHumidity" class="list-group-item"></li>
+                    <li id="conditionCode" class="list-group-item"></li>
+                </ul>
+            </div>
+
            </form>
      </div>
-      <div class="col-3"></div>
     </div>
 </body>
 </html> 
